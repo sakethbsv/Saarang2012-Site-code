@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta name="keywords" content="saarang, iit, iitm, iit madras, culfest, cultural festival" /> 
+	<meta name="description" content="Saarang 2012 - Annual Cultural Festival of IIT Madras" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Saarang 2012 - Annual Cultural Festival of IIT Madras</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel = "stylesheet" type="text/css" href="style.css" >
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="jquery.mCustomScrollbar.js"></script>
+	<script type="text/javascript" src="jquery.cycle.lite.js"></script>
+	<script type="text/javascript" src="jquery.animate-shadow-min.js"></script>
+	<script type="text/javascript" src="config.js"></script>
+	<script type="text/javascript" src="classesb.js"></script>
+    <script type="text/javascript" src="cookie.js"></script>
+    <script type="text/javascript" src="log_reg.js"></script>   
+    <script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#log_reg, #logout_but").hide();
+			$("#log_but").click(function() {
+				$("#log_reg").slideToggle(1500);
+			});
+		});
+		
+		function check_cookie() {
+			if( (name = readCookie("saar_log_name")) != null ) {
+				$('#log_but').hide();
+				$('#logout_but').show();
+				$('#logout_but').html('Hi ' + name + '. Logout');
+			}
+		}
+	</script>
+    
+	<style>
+	#proshowbg{
+	height:100%;
+	width:100%;
+	background-image:url(images/The-best-top-desktop-lightning-wallpapers-lightning-wallpaper-4.jpg);
+	position:absolute;
+	display:none;
+	
+	}
+	</style>
+</head>
+<body style="display: none;" onLoad="check_cookie();">
+<div id="proshowbg"></div>
+	<div id="site_container">
+ 
+		<div id="backgroundSlideshow"></div>
+        <div id="site_overlay_left"></div>
+        <div id="site_overlay_right"></div>
+		<div id="site_overlay_left_contents">
+            <div id="saaranglogo"></div>   
+			<p id="power">Website powered by:</p>
+            <a id="znet" href="http://www.znetlive.in" target="_blank"></a>    
+        </div>
+       
+	<script type="text/javascript" src="script.js"></script>
+    	<div id="site_overlay_right_contents">	
+        <div id="slideshowbox"></div>
+        <div id="evtslideshowbox"></div>
+            <div id="titlelogos">
+				<map name="logomap">
+                	<area shape="rect" coords="0,0,60,80" alt="saarang" href="#">
+                    <area shape="rect" coords="75,0,130,80" alt="iitm" href="#">
+                    <area shape="rect" coords="142,0,207,80" alt="tuvnord" href="#">
+                </map>
+            </div>
+		</div>
+        
+        <div id="log_but">Login</div>
+        <div id="logout_but">Logout</div>
+        
+        <div id="page_container">
+        <div id="log_reg">
+            <!-- Use the below two forms ( starting from next line, till next comment ) without any changes, else everything will be screwed-->
+            <div id="reg_div">
+            <p id="log_head">New user? Register</p>
+            <form method="post" action="none" name="regs_form">
+                Name :<input type="text" name="name" class="inp" id="name" /><br />
+                Username :<input type="text" name="username" class="inp" id="username" onBlur="ver_uname()" /><span id="ver_usr" style="font-size:12px;"></span><br />
+                Password :<input type="password" name="password" class="inp" id="password" onBlur="ver_pas1()" /><span id="ver_pas1" style="font-size:12px;"></span><br />
+                Password(retype) :
+                <input type="password" name="password_ret" class="inp" id="password_ret" onBlur="ver_pas2()" /><span id="ver_pas2" style="font-size:12px;"></span><br />
+                Email :<input type="text" name="email" class="inp" id="email" onBlur="ver_email()" /><span id="ver_email" style="font-size:12px;"></span><br />
+                College :<input type="text" name="colg" class="inp" id="colg" /><br />
+                College Id :<input type="text" name="colgid" class="inp" id="colgid"  /><br />
+                Gender :<select style="float:right;margin-top:12px;" id="gender" name="gender"> 
+            		<option value="Male" selected="selected">Male</option>
+                	<option value="Female">Female</option>
+            	</select><br />
+                City:<input type="text" name="city" class="inp" id="city" /><br />
+                State:<input type="text" name="state" class="inp" id="state" /><br />
+                <input type="button" id="submit" value="Register" name="submit" /><br />
+            </form>
+            <span id="regs_msg" style="display:none;font-size:12px;line-height:20px;text-align:center;clear:right;"></span>
+            </div>
+            
+            <div id="log_div">
+            <p id="log_head">Login</p>
+            <form method="post" action="none" name="login_form">
+            Email Id:<input type="text" name="emailid" class="inp" id="emailid" onblur="ver_email1()" value=""/><span id="ver_email1"></span><br />
+            Password:<input type="password" name="password" class="inp" id="pass" /><br />
+            <input type="button" id="submit" value="Login" name="log_submit"/>
+            <input type="checkbox" name="stay" id="stay" value="stay" /><i id="rem" style="font-size:13px">Remember me</i><br />
+            </form>
+            <span id="login_msg" style="display:none;font-size:12px;line-height:20px;text-align:center;clear:right;"></span>            
+            </div>
+            <!--Till this line-->
+        </div>
+        </div>
+    </div>
+        
+</body>
+</html>

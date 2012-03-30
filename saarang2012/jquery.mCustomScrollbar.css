@@ -1,0 +1,63 @@
+.classInnerBoxScroll { 
+	position:relative; 
+	margin:0px; 
+	width:400px; 
+	height:300px; 
+}
+
+.customScrollBox { 
+	position:relative; 
+	height:100%; 
+	overflow:hidden;
+}
+
+.customScrollBox .container {
+	position:relative; 
+	width:320px;  
+	float:left;
+	padding: 0px 5px 0px 35px;
+}
+
+.customScrollBox .content {
+	clear:both;
+}
+.dragger_container {
+	position:relative; 
+	width:0px; 
+	height:300px; 
+	float:right; 
+	margin: 0px 15px 0 0px; 
+	cursor: pointer; 
+	border-left : 1px dotted #000;
+
+}
+.dragger {
+	position:absolute; 
+	width:5px; 
+	height:60px;
+	margin-left:-3px;  
+	background:#555; 
+	text-align:center; 
+	/*line-height:60px; */
+	overflow:hidden; 
+	cursor:pointer; 
+	/*-moz-border-radius:2px; 
+		-khtml-border-radius:2px; 
+		-webkit-border-radius:2px; 
+		border-radius:2px;*/
+}
+.dragger_pressed {
+	position:absolute; 
+	width:8px; 
+	margin-left:-4px; 
+	height:60px; 
+	background:#777; 
+	text-align:center; 
+	/*line-height:60px; */
+	color:#666; 
+	overflow:hidden; 
+	/*-moz-border-radius:4px; 
+		-khtml-border-radius:4px; 
+		-webkit-border-radius:4px; 
+		border-radius:4px; */
+}

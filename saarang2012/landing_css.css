@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+#Saarang-Website-Design2-01 {
+	position:absolute;
+	left:-20px;
+	top:30px;
+	width:237px;
+	//height:143px;
+	z-index:3;
+}
+#update-ticker {
+	position:absolute;
+  visibility:hidden;
+	left:24px;
+	top:350px;
+	width:170px;
+	height:172px;
+	background-color:#333;
+	z-index:4;
+	opacity:0.8;
+	-moz-box-shadow:0 0 30px #000 inset;
+	-webkit-box-shadow:0 0 30px #000 inset;
+	box-shadow:0 0 30px #000 inset;
+}
+#spons-ticker {
+	position:absolute;
+	//visibility:hidden;
+	left:7px;
+	top:143px;
+	//width:170px;
+	//height:170px;
+	width:199px;
+	height:133px;
+	z-index:4;
+	opacity:0.8;
+	background-color:#333;
+	background-image:url(images/sponsors/Blur.jpg);
+	-moz-box-shadow:0 0 30px #000 inset;
+	-webkit-box-shadow:0 0 30px #000 inset;
+	box-shadow:0 0 30px #000 inset;
+	
+}
+ #titlespons{
+	 position:absolute;
+	z-index:10;
+	color:#FFF;
+	left:40px;
+	top:285px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ }
+ #power {
+	position: absolute;
+	bottom: 55px;
+	text-align: center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #000;
+	font-weight: bold;
+	left: 18px;
+}
+ #titlespons{
+	 position:absolute;
+	z-index:10;
+	color:#FFF;
+	left:40px;
+	top:285px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+ }
+
+#power2 {
+	position: absolute;
+	bottom: 25px;
+	text-align: center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: #000;
+	font-weight: bold;
+	right: 65px;
+	cursor:pointer;
+	z-index:10;
+}
+
+#power3 {
+	position: absolute;
+	top:175px;
+	//bottom: 70px;
+	text-align: center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: #000;
+	font-weight: bold;
+	right: 2px;
+	background-color:#CF0;
+	width:210px;
+	height:136px;
+}
+
+#pattern {
+	z-index: 2;
+position: absolute;
+	width:100%;
+height:100%;
+top: 0;
+	left: 0;
+background-image: url(background.jpg);
+}
+
+	#status{
+		position:absolute;
+		z-index:3000;
+		left:240px;
+		top:40px;
+	}
+	#status1{
+		position:absolute;
+		z-index:3000;
+		left:70px;
+		top:140px;
+	}
+	#status2{
+		position:absolute;
+		z-index:3000;
+		left:70px;
+		top:140px;
+	}
+
+ #znet{
+	z-index:10; 
+ }
+ 
+#Saarang-Website-Design2-05 {
+	position:absolute;
+	//left:1131px;
+	right:0px;
+	top:0px;
+	width:218px;
+	bottom:0px;
+	//height:731px;
+	height:100%;
+	background-color:#f7f7f7;
+	opacity:0.2;
+	height:100%;
+	z-index:3;
+}
+#opacity {
+	position:absolute;
+	//left:1131px;
+	right:-6px;
+	top:4px;
+	width:218px;
+	//height:731px;
+	//background-color:#f7f7f7;
+	//opacity:0.9;
+	z-index:4;
+}
+#fblike {
+	position:absolute;
+	left:1160px;
+	//right:-6px;
+	top:354px;
+	//width:218px;
+	//height:731px;
+	//background-color:#f7f7f7;
+	//opacity:0.9;
+	z-index:10;
+}
+#tweet {
+	position:absolute;
+	left:65px;
+}

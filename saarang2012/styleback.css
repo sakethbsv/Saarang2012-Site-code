@@ -1,0 +1,574 @@
+* {
+	margin : 0px;
+	padding: 0px;
+	border : 0px;
+}
+
+body {
+	width : 100%;
+	height : 100%;
+	font-family:'Open Sans', sans-serif;
+	background-image: url("images/mainbg2.jpg");
+	background-position: 50% 70%;
+	overflow: hidden;
+}
+
+.defaultClassTabDefault {
+	box-shadow : 0px 0px 15px #000;
+}
+
+/*
+.defaultClassTabDefault:hover {
+	box-shadow : 0px 0px 10px #000;
+}
+
+*/
+
+.classInnerBoxLoading {
+	width: 100%;
+	height: 100%;
+	background-image: url("images/loader8.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+}
+
+.defaultClassTabClose {
+	background-position : 0px 0px;
+}
+
+.defaultClassTabInfo {
+	background-position : 0px -50px;
+}
+
+.defaultClassTabRules {
+	background-position : 0px -100px;
+}
+
+.defaultClassTabContact {
+	background-position : 0px -150px;
+}
+
+.defaultClassTabList {
+	background-position : 0px -250px;
+}
+
+.defaultClassTabGallery {
+	background-position : 0px -200px;
+}
+
+.classInnerBoxTitle {
+	font-size:24px;
+	height : 70px;
+	display: block;
+	color:#FFF;
+}
+
+.classInnerBoxTitle p {
+	padding-top: 23px;
+}
+
+.classInnerBoxContent {
+	text-align: left;
+}
+
+.classInnerBoxGrid {
+	text-align: center;
+	color:#FFF;
+	/*height : 100%;*/
+	height:auto;
+	width: 100%;
+	display: block;
+}
+
+.classInnerBoxGrid p {
+	padding-top:38%;
+	font-size:20px;
+}
+
+#box_home_spons_grid_title p {
+	padding-top: 28%;
+	color: white;
+}
+
+#box_spotlight_spray_grid_title p, #box_spotlight_deb_grid_title p, #box_spotlight_inq_grid_title p, #box_spotlight_carnival_grid_title p, #box_spotlight_canvas_grid_title p, #box_hospi_reach_grid_title p, #box_hospi_desk_grid_title p, #box_hospi_cont_grid_title p, #box_spons_title_grid_title p, #box_event_unwindevents_grid_title p, #box_event_speakingevents_grid_title p, #box_event_mediaevents_grid_title p, #box_event_thespianevents_grid_title p, #box_event_online_grid_title p, #box_events_bigplan_grid_title p, #box_events_adventure_grid_title p, #box_music_cm_grid_title p, #box_music_lm_grid_title p, #box_lm_title_grid_title p, #box_lm_lmacoustyx_grid_title p, #box_nxg_wmacoustyx_grid_title p, #box_uwe_title_grid_title p, #box_uwe_scavenger_grid_title p, #box_uwe_dailyevents_grid_title p, #box_uwe_treasurehunt_grid_title p, #box_spk_title_grid_title p, #box_spk_dbt_grid_title p, #box_med_title_grid_title p, #box_med_sfm_grid_title p, #box_med_photo_grid_title p, #box_thp_title_grid_title p, #box_thp_treasurehunt_grid_title p, #box_lit_title_grid_title p, #box_lit_wtg_grid_title p, #box_fa_dreamsoncanvas_grid_title p, #box_ole_title_grid_title p, #box_ole_onlinequiz_grid_title p, #box_ole_onlinephoto_grid_title p, #box_dance_choreonight_grid_title p, #box_dance_classical_grid_title p, #box_dance_freestylesolo_grid_title p, #box_ole_onlinephoto_grid_title p, #box_cm_title_grid_title p {
+	padding-top: 25%;
+	color: white;
+}
+
+#box_lit_wtg_grid_title p{
+	padding-top: 22%;
+}
+
+#box_music_nxg_grid_title p, #box_nxg_title_grid_title p {
+	font-size: 18px;
+	padding-top: 15%;
+	color: white;
+}
+
+#box_spotlight_inq_grid_title p, #box_spotlight_canvas_grid_title p {
+	font-size: 18px;
+}
+
+#box_home_spotlight_grid_title p,#box_home_hospitality_grid_title p,#box_home_events_grid_title p,#box_home_proshow_grid_title p{
+	color: white;
+}
+
+#box_home_spons_grid_title,#box_spotlight_title_grid_title,#box_events_title_grid_title,#box_hospi_title_grid_title,#box_spons_title_grid_title,#box_music_title_grid_title {
+	color: white;
+	
+}
+
+#box_spotlight_cinema_grid_title p,#box_hospi_intro_grid_title p,#box_hospi_info_grid_title p,#box_spons_info_grid_title p,#box_event_interactions_grid_title p,#box_nxg_power_grid_title p,#box_med_photo_grid_title p,#box_lit_wtg_grid_title p,#box_lit_wrtawd_grid_title p,#box_fa_day1_grid_title p,#box_fa_day2_grid_title p,#box_fa_day3_grid_title p,#box_fa_day4_grid_title p,#box_int_cinemascope_grid_title p,#box_int_workshops_grid_title p,#box_int_title_grid_title p,#box_ole_onlinephoto_grid_title p{
+font-size:15px;	
+padding-top:38%;
+}
+
+
+
+#box_lit_wtg_grid_title p{
+	padding-top: 22%;
+}
+
+#box_hospi_accportal_grid_title p,#box_hospi_alt_grid_title p, #box_cm_eloc_grid_title p, #box_cm_dbt_grid_title p {
+	font-size:13px;	
+	padding-top:38%;
+}
+}
+
+.defaultClassBox {
+	box-shadow: 0px 0px 20px #000;
+	
+}
+
+.defaultClassBox:hover {
+	box-shadow: 0px 0px 10px #000;
+}
+
+.defaultClassGalleryBox {
+	box-shadow: 0px 0px 0px #000;
+}
+
+.defaultClassGalleryBox:hover {
+	box-shadow: 0px 0px 0px #000;
+}
+
+.defaultClassZoomedInBox:hover {
+	box-shadow: 0px 0px 20px #000;
+}
+
+.classPageSwitchClick {
+	cursor: pointer;
+}
+
+.classZoomOnClick {
+	cursor: pointer;
+}
+
+.defaultClassZoomedInBox {
+	cursor: default;
+}
+
+#site_overlay_left {
+	width: 220px; 
+	height: 100%; 
+	display: block; 
+	z-index: 0; 
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+	background-color: white;
+}
+#page_home,#page_spotlight{
+	position:absolute;
+top: -100px;
+}
+#site_overlay_contents_left_contents {
+	width: 220px; 
+	height: 100%; 
+	display: block; 
+	z-index: 0; 
+	position: absolute;
+	top: 0px; 
+	left: 0px;
+}
+
+#site_overlay_right {
+	width: 220px; 
+	height: 100%; 
+	display: block; 
+	z-index: 0; 
+	position: absolute;
+	top: 0px; 
+	right: 0px;
+	background-color: white;
+}
+
+#site_overlay__right_contents {
+	width: 220px; 
+	height: 100%; 
+	display: block; 
+	z-index: 0; 
+	position: absolute;
+	top: 0px; 
+	right: 0px;
+}
+
+#bot_bar_wrap{
+	position:fixed;
+	width:100%;
+	bottom:0px;
+	height:22px;
+}
+#bot_bar {
+	position:relative;
+	/*left:400px;*/
+	bottom:0px;
+	margin:0px auto;
+	color:#000;
+	background-color:#FFF;
+	opacity:0.6;
+	z-index:5000;
+	font-family:'Open Sans', sans-serif;
+	font-size:16px;
+	padding-top:3px;
+	height:22px;
+	width:600px;
+	text-align:center;
+}
+
+.bot_links {
+	position:absolute;
+	width:120px;
+	margin:0px;
+	border:none;
+	cursor:pointer;
+}
+
+#titlespons{
+	position:absolute;
+	color:#FFF;
+	top:130px;
+	font-size:17px;
+	font-family:'Open Sans', sans-serif;
+	left:10px;
+	text-align:center;
+	width:199px;
+}
+
+#creditstitle {
+	position: absolute;
+	bottom: 25px;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+	font-size: 25px;
+	color: #000;
+	right: 65px;
+	cursor:pointer;
+	z-index:3;
+}
+#titlelogos {
+	position:absolute;
+	right:8px;
+	top:4px;
+	width:200px;
+	height:80px;
+	background-image:url(images/landingsprite.png);
+	background-position: 0 120px;
+}
+
+#power {
+	position: absolute;
+	bottom: 55px;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	left: 18px;
+}
+
+#saaranglogo {
+	position:absolute;
+	left:20px;
+	top:20px;
+	width:200px;
+	height:70px;
+	background-image:url(images/landingsprite.png);
+	background-position: 0 192px;
+}
+
+#znet {
+	position:absolute;
+	left:0px;
+	bottom:18px;
+	width:200px;
+	height:32px;
+	background-image:url(images/landingsprite.png);
+	background-position: 0 35px;
+}
+
+#updates_title {
+	position:absolute;
+	left:10px;
+	text-align:center;
+	top:320px;
+	width:199px;
+	font-size:17px;
+	z-index:3;
+	color: white;
+}
+
+#update-ticker {
+	position:absolute;
+	left:10px;
+	text-align:center;
+	top:350px;
+	width:200px;
+	height:110px;
+	color:#FFF;
+	//background-color:#000;
+	background-image: url(images/nokia-updates.png);
+}
+
+#update-ticker div{
+	width:180px;
+	height:133px;
+	text-align:center;
+	font-size:12px;
+}
+
+#fb {
+	position:absolute;
+	right:5px;
+	top:300px;
+	background-image:url(images/landingsprite.png);
+	background-position: 0 48;
+	width: 48px;
+	height: 48px;
+	z-index:3;
+}
+#twit {
+	position:absolute;
+	right:5px;
+	top:358px;
+	background-image:url(images/landingsprite.png);
+	background-position: 0 288px;
+	width: 48px;
+	height: 48px;
+	z-index:3;
+}
+#you_tube {
+	position:absolute;
+	right:5px;
+	top:416px;
+	background-image:url(images/landingsprite.png);
+	background-position: 0 240px;
+	width: 48px;
+	height: 48px;
+	
+}
+#fblike {
+	position:absolute;
+	right:-290px;
+	top:315px;
+	z-index:2;
+}
+
+#logos{
+	background-color:#000;
+}
+
+#tweet {
+	top:50px;
+	position:absolute;
+	left:0px;
+}
+
+
+#spons-ticker {
+	position:absolute;
+	left:10px;
+	top:160px;
+	width:199px;
+	height:133px;
+	background-color:#333;
+	z-index:0;
+}
+#teaser {
+	position: absolute;
+	top:106px;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+	font-size: 25px;
+	color: #FFF;
+	right: 0px;
+	width:222px;
+	height:195px;
+	z-index:4;
+}
+#slideshowbox {
+	position: absolute;
+	top:206px;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+	font-size: 25px;
+	color: #FFF;
+	right: 385px;
+	width:222px;
+	height:195px;
+	z-index:4;
+}
+
+
+#backgroundSlideshow {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+
+#backgroundSlideshow {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#log_but {
+	position:absolute;
+	right:220px;
+	top:0px;
+	width:70px;
+	height:30px;
+	font-size:18px;
+	text-align:center;
+	color:#FFF;
+	background-color:#0FC;
+	cursor:pointer;
+	z-index:10;
+}
+
+#log_reg {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:850px;
+	height:100%;
+	overflow:hidden;
+	background-color:#000;
+	z-index:1000;
+	color:#FFF;
+	text-align:left;
+	line-height:40px;
+}
+	#reg_div {
+		width:385px;
+		height:100%;
+		position:absolute;
+		left:0px;
+		top:0px;
+		border-right:2px #8AC solid;
+		padding: 20px;
+	}
+	.inp {
+		float: right;
+		margin-top:12px;
+		height:18px;
+	}
+	#log_div {
+		width:385px;
+		height:100%;
+		position:absolute;
+		left:50%;
+		top:0px;
+		padding:20px;
+	}
+	#log_head {
+		font-size:24px;
+		width:100%;
+		margin-bottom:10px;
+		text-align:center;
+	}
+	#submit {
+		margin-top:15px;
+		float:right;
+		width:60px;
+		text-align:center;
+		padding:5px;
+		background-color:#0F0;
+		font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+		color:#FFF;
+		font-size:14px;
+		cursor:pointer;
+	}
+
+/* -------------- CUSTOM SCROLL CSS ----------------- */
+
+.classInnerBoxScroll { 
+	position:relative; 
+	margin:0px; 
+	width:400px; 
+	height:300px; 
+}
+
+.customScrollBox { 
+	position:relative; 
+	height:100%; 
+	overflow:hidden;
+}
+
+.customScrollBox .container {
+	position:relative; 
+	width:320px;  
+	float:left;
+	padding: 0px 5px 0px 35px;
+}
+
+.customScrollBox .content {
+	clear:both;
+}
+.dragger_container {
+	position:relative; 
+	width:0px; 
+	height:300px; 
+	float:right; 
+	margin: 0px 15px 0 0px; 
+	cursor: pointer; 
+	border-left : 1px dotted #000;
+
+}
+.dragger {
+	position:absolute; 
+	width:5px; 
+	height:60px;
+	margin-left:-3px;  
+	background:#555; 
+	text-align:center; 
+	/*line-height:60px; */
+	overflow:hidden; 
+	cursor:pointer; 
+	/*-moz-border-radius:2px; 
+		-khtml-border-radius:2px; 
+		-webkit-border-radius:2px; 
+		border-radius:2px;*/
+}
+.dragger_pressed {
+	position:absolute; 
+	width:8px; 
+	margin-left:-4px; 
+	height:60px; 
+	background:#777; 
+	text-align:center; 
+	/*line-height:60px; */
+	color:#666; 
+	overflow:hidden; 
+	/*-moz-border-radius:4px; 
+		-khtml-border-radius:4px; 
+		-webkit-border-radius:4px; 
+		border-radius:4px; */
+}
+
+/* -------------- END OF CUSTOM SCROLL CSS ----------------- */

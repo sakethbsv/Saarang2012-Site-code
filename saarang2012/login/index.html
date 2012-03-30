@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html lang="en">
+<head>
+	<meta name="keywords" content="saarang, iit, iitm, iit madras, culfest, cultural festival" /> 
+	<meta name="description" content="Saarang 2012 - Annual Cultural Festival of IIT Madras" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Saarang 2012 - Annual Cultural Festival of IIT Madras</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel = "stylesheet" type="text/css" href="style.css" >
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>
+	<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="jquery.mCustomScrollbar.js"></script><script type="text/javascript" src="log_reg.js"></script>
+	<script type="text/javascript" src="jquery.cycle.lite.js"></script>
+	<script type="text/javascript" src="jquery.animate-shadow-min.js"></script>
+	<script type="text/javascript" src="config.js"></script>
+	<script type="text/javascript" src="classes.js"></script>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27682594-1']);
+  _gaq.push(['_setDomainName', 'saarang.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+<!-- Script for login and register -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#log_reg").hide();
+		$("#log_but").click(function() {
+			$("#log_reg").slideToggle(1500);
+		});
+	});
+</script>
+
+</head>
+<body style="display: none;">
+	<div id="site_container">
+		<div id="backgroundSlideshow"></div>
+        <div id="site_overlay_left"></div>
+        <div id="site_overlay_right"></div>
+		<div id="site_overlay_left_contents">
+            <div id="saaranglogo">
+            	
+          	</div>   
+			<p id="power">Website powered by:</p>
+            <a id="znet" href="http://www.znetlive.in" target="_blank">
+				
+			</a>    
+        </div>
+		
+        <!--div id="bot_bar_wrap">
+        <div id="bot_bar">
+			<a href="http://www.iitm.ac.in/" target="_blank" style="text-decoration:none;"><p class="bot_links" style="left:0px;">IIT Madras</p></a>
+    		<p id="conus" class="bot_links" style="left:120px;">Contact Us</p>
+    		<p id="power2" class="bot_links" style="left:240px;">Credits</p>
+    		<p id="abtus" class="bot_links" style="left:350px;">About Us</p>
+    		<p id="copyright" class="bot_links" style="left:470px;">© Saarang 2012</p>
+    	</div>
+        </div-->
+	<script type="text/javascript" src="script.js"></script>
+    	<div id="site_overlay_right_contents">	
+            <div id="titlelogos">
+            <img src="images/empty.png" width="208px" height="80px" usemap="#logomap"/>
+                <map name="logomap">
+                	<area shape="rect" coords="0,0,60,80" alt="saarang" href="#">
+                    <area shape="rect" coords="75,0,130,80" alt="iitm" href="http://www.iitm.ac.in" target="_blank">
+                    <area shape="rect" coords="142,0,207,80" alt="tuvnord" href="#">
+                </map>
+            </div>
+		</div>
+        	<div id="log_but">Login</div>
+        <div id="page_container">
+
+        <div id="log_reg">
+            <!-- Use the below two forms ( starting from next line, till next comment ) without any changes, else everything will be screwed-->
+            <div id="reg_div">
+            <p id="log_head">New user? Register</p>
+            <form method="post" action="none" name="regs_form">
+                Name :<input type="text" name="name" class="inp" id="name" /><br />
+                Username :<input type="text" name="username" class="inp" id="username" onBlur="ver_uname()" /><span id="ver_usr"></span><br />
+                Password :<input type="password" name="password" class="inp" id="password" onBlur="ver_pas1()" /><span id="ver_pas1"></span><br />
+                Password(retype) :
+                <input type="password" name="password_ret" class="inp" id="password_ret" onBlur="ver_pas2()" /><span id="ver_pas2"></span><br />
+                Email :<input type="text" name="email" class="inp" id="email" onBlur="ver_email()" /><span id="ver_email"></span><br />
+                College :<input type="text" name="colg" class="inp" id="colg" /><br />
+                College Id :<input type="text" name="colgid" class="inp" id="colgid"  /><br />
+                Gender :<select id="gender" name="gender"> 
+            		<option value="Male" selected="selected">Male</option>
+                	<option value="Female">Female</option>
+            	</select><br />
+                City:<input type="text" name="city" class="inp" id="city" /><br />
+                State:<input type="text" name="state" class="inp" id="state" /><br />
+                <input type="button" id="submit" value="Register" name="submit" />
+                <span id="regs_msg" style="display:none;"></span>
+            </form>
+            </div>
+            
+            <div id="log_div">
+            <p id="log_head">Login</p>
+            <form method="post" action="none" name="login_form">
+            Email Id:<input type="text" name="emailid" class="inp" id="emailid" onBlur="ver_email()" value=""/><span id="ver_email"></span><br />
+            Password:<input type="password" name="password" class="inp" id="password" /><br />
+            <input type="button" id="submit" value="Login" name="submit"/>
+            <input type="checkbox" name="stay" id="stay" value="stay" /><i id="rem">Remember me</i><br />
+            <span id="login_msg" style="display:none;"></span>
+            </form>
+            </div>
+            <!--Till this line-->
+        </div>
+        </div>
+    </div>
+</body>
+</html>
